@@ -71,15 +71,33 @@ h3 {
 p,
 dd,
 figcaption {
-  max-width: 68ch;
+  max-width: 60ch;
 }
 
 figure {
   margin: 0;
 }
 
-figure > a {
+figure > a,
+picture {
   display: block;
+}
+
+/* The address as plain, selectable text (one click selects it all) next to the web-compose links: a mailto
+   link does nothing on a computer without a mail app (v2.1) */
+.addr {
+  color: var(--ink);
+  white-space: nowrap;
+  -webkit-user-select: all;
+  user-select: all;
+}
+
+.sep::before {
+  content: "·";
+  content: "·" / "";
+  display: inline-block;
+  margin: 0 0.5em 0 0.3em;
+  color: var(--muted);
 }
 
 .wrap {
@@ -124,6 +142,7 @@ figure > a {
 
 .dots > *:not(:last-child)::after {
   content: "·";
+  content: "·" / "";
   display: inline-block;
   margin-left: 0.5em;
   color: var(--muted);
@@ -170,7 +189,8 @@ figure > a {
 
 .site-nav a {
   display: inline-block;
-  padding: 4px 0;
+  padding: 12px 0;
+  margin: -8px 0;
   color: var(--muted);
   font-size: 14px;
   text-decoration: none;
@@ -183,7 +203,9 @@ figure > a {
 
 .btn-outline {
   grid-area: cta;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   border: 1px solid var(--accent);
   color: var(--accent);
   font-size: 14px;
@@ -215,9 +237,36 @@ figure > a {
   color: #fff;
 }
 
+.btn-ghost {
+  display: inline-block;
+  border: 1px solid var(--accent);
+  border-radius: 2px;
+  color: var(--accent);
+  font-weight: 600;
+  line-height: 1.25;
+  padding: 11px 18px;
+  text-decoration: none;
+}
+
+.btn-ghost:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+.mail-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 12px;
+}
+
+.mail-actions .btn {
+  padding: 12px 20px;
+}
+
 /* Hero. Phone order: H1, sub, button, drawing, terms line (the copy wrapper dissolves into the flex column). */
 .hero {
-  padding: 24px 0 44px;
+  padding: 16px 0 44px;
   border-bottom: 1px solid var(--hair);
 }
 
@@ -231,6 +280,7 @@ figure > a {
 }
 
 .hero h1 {
+  text-wrap: balance;
   order: 1;
   margin: 0 0 10px;
   font-size: 30px;
@@ -245,7 +295,28 @@ figure > a {
 
 .hero .cta {
   order: 3;
-  margin: 0 0 18px;
+  margin: 0 0 6px;
+}
+
+.hero .guarantee {
+  order: 3;
+  margin: 0 0 4px;
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.hero .alt-mail .dots {
+  white-space: nowrap;
+}
+
+.hero .alt-mail {
+  order: 3;
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.45;
 }
 
 .hero .cta .btn {
@@ -267,11 +338,6 @@ figure > a {
 .studio-grid img {
   border: 1px solid var(--hair);
   background: #fff;
-}
-
-.hero-terms {
-  order: 5;
-  margin: 14px 0 0;
 }
 
 figcaption {
@@ -369,7 +435,12 @@ h3 {
 }
 
 .sample .letter p {
+  min-width: 0;
   margin: 0;
+}
+
+.letter .dots > a {
+  white-space: normal;
 }
 
 .files {
@@ -386,6 +457,19 @@ h3 {
   font-weight: 600;
 }
 
+.files a,
+.doc-links a,
+.site-footer a {
+  display: inline-block;
+  padding: 10px 0;
+  margin: -10px 0;
+}
+
+.site-footer a {
+  padding: 12px 0;
+  margin: -12px 0;
+}
+
 .files span {
   margin-left: 6px;
   color: var(--muted);
@@ -393,8 +477,9 @@ h3 {
 }
 
 .note {
-  max-width: none;
-  margin: 32px 0 0;
+  max-width: 60ch;
+  margin: 32px auto 0;
+  text-align: center;
   padding-top: 14px;
   border-top: 1px solid var(--hair);
   color: var(--muted);
@@ -475,8 +560,8 @@ h3 {
   margin: 0 0 12px;
 }
 
-#about .contact {
-  margin-top: 20px;
+#about .mail-actions {
+  margin: 4px 0 28px;
 }
 
 /* Privacy notice */
@@ -526,8 +611,7 @@ h3 {
     z-index: 5;
   }
 
-  section[id],
-  article[id] {
+  [id] {
     scroll-margin-top: 64px;
   }
 
@@ -549,7 +633,7 @@ h3 {
   }
 
   .section {
-    padding: 96px 0;
+    padding: 72px 0;
   }
 
   h2 {
@@ -621,7 +705,11 @@ h3 {
   }
 
   .hero .cta {
-    margin-bottom: 16px;
+    margin-bottom: 10px;
+  }
+
+  .hero .alt-mail {
+    margin-bottom: 0;
   }
 
   .hero .cta .btn {
@@ -631,8 +719,11 @@ h3 {
     padding: 14px 20px;
   }
 
-  .hero-terms {
-    margin: 0;
+}
+
+@media (min-width: 960px) and (max-width: 1119px) {
+  .hero h1 {
+    font-size: 38px;
   }
 }
 
@@ -649,5 +740,27 @@ h3 {
     grid-row: span 6;
     grid-template-rows: subgrid;
     align-content: start;
+  }
+}
+
+/* Studio boards side by side (v2.2, UX review M4) */
+@media (min-width: 1000px) {
+  .studio-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 48px;
+    align-items: start;
+  }
+
+  .studio-grid .wide,
+  .studio-grid .side {
+    grid-column: auto;
+  }
+
+  .studio-grid .side {
+    display: block;
+  }
+
+  .studio-grid .side figcaption {
+    margin-top: 8px;
   }
 }
