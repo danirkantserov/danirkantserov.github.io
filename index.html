@@ -4,14 +4,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light">
-<title>Danir Kantserov · GIS &amp; CAD mapping for wetland delineations</title>
-<meta name="description" content="White-label wetland delineation figures and GIS/CAD files for US environmental consultants. You do the fieldwork; I produce the figures. Minnesota and California samples, a free redraw test, from $150 per figure set.">
+<title>Danir Kantserov · Wetland delineation figures from your field data</title>
+<meta name="description" content="White-label wetland delineation figure sets with shapefiles, a DXF and the ORM tables, for US environmental consulting firms. Minnesota and California samples, a free redraw test, from $150 per figure set.">
 <meta name="author" content="Danir Kantserov">
+<link rel="canonical" href="https://danirkantserov.github.io/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Danir Kantserov · GIS &amp; CAD mapping for wetland delineations">
-<meta property="og:description" content="You do the fieldwork; I produce the figures. Samples, a free redraw test and the terms on one page.">
-<!-- og:image needs an absolute URL. Once the site is live, add for example:
-<meta property="og:image" content="https://danirkantserov.github.io/img/mn-sheet8-delineation-1600.jpg"> -->
+<meta property="og:url" content="https://danirkantserov.github.io/">
+<meta property="og:title" content="Wetland delineation figures, drawn from your field data">
+<meta property="og:description" content="White-label figure sets for US environmental consulting firms. Minnesota and California samples (synthetic field data) and a free redraw test.">
+<meta property="og:image" content="https://danirkantserov.github.io/img/og-card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Minnesota sample, sheet 8: hatched wetland boundaries and labels on an aerial photo, drawn from synthetic field data.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://danirkantserov.github.io/img/og-card.jpg">
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -26,9 +32,9 @@
         <li><a href="#samples">Samples</a></li>
         <li><a href="#how">How it works</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="mailto:danirkantserov@gmail.com">Contact</a></li>
       </ul>
     </nav>
+    <a class="btn-outline" href="mailto:danirkantserov@gmail.com?subject=Free%20redraw%20of%20one%20of%20our%20wetland%20figures">Free redraw</a>
   </div>
 </header>
 
@@ -37,184 +43,147 @@
 <section class="hero" id="top">
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <p class="eyebrow">Danir Kantserov · Milan, Italy</p>
-      <h1>GIS &amp; CAD mapping for wetland delineations</h1>
-      <p class="lead">You do the fieldwork; I produce the figures. White-label figure sets and GIS/CAD files for US environmental consulting firms, drawn from your field data.</p>
-      <div class="offer">
-        <p><strong>A free test first, nothing confidential.</strong> Send me one figure from a report you've already filed, and I'll redraw it in your format so you can compare. No charge, no obligation.</p>
-        <p class="actions">
-          <a class="btn" href="mailto:danirkantserov@gmail.com?subject=Free%20redraw%20of%20one%20of%20our%20wetland%20figures">Send a figure for a free redraw</a>
-          <a class="btn-link" href="#samples">See the samples</a>
-        </p>
-      </div>
+      <h1>Wetland delineation figures, drawn from your field data.</h1>
+      <p class="sub">White-label figure sets with shapefiles, a DXF and ORM tables, for US environmental consultants. Samples: Minnesota and California.</p>
+      <p class="cta"><a class="btn" href="mailto:danirkantserov@gmail.com?subject=Free%20redraw%20of%20one%20of%20our%20wetland%20figures">Send one filed figure for a free redraw</a></p>
+      <p class="mono hero-terms dots"><span>From $150 per figure set</span> <span>One correction round</span> <span>Your title block</span></p>
     </div>
     <figure class="hero-figure">
-      <a href="#minnesota"><img src="img/mn-sheet8-delineation-800.jpg" width="800" height="518" loading="lazy" decoding="async" alt="Minnesota sample, sheet 8: wetland delineation map on an aerial photo, drawn from synthetic field data."></a>
-      <figcaption>Minnesota sample, sheet 8 of 8 (synthetic field data).</figcaption>
+      <a href="img/hero-mn-delineation-1600.jpg"><img src="img/hero-mn-delineation-800.jpg" srcset="img/hero-mn-delineation-800.jpg 800w, img/hero-mn-delineation-1600.jpg 1600w" sizes="(min-width: 1120px) 620px, (min-width: 960px) calc(58vw - 30px), calc(100vw - 40px)" width="1600" height="1026" fetchpriority="high" decoding="async" alt="Minnesota sample, sheet 8: three hatched wetlands (sedge meadow, shrub-carr, hardwood swamp) on a 2023 aerial photo, with the control point, sample points, photo points and the review-area boundary."></a>
+      <figcaption class="mono dots"><span>Minnesota sample</span> <span>sheet 8</span> <span>synthetic field data</span></figcaption>
     </figure>
-    <ul class="facts">
-      <li><strong>From $150 per figure set</strong> with a fixed quote and delivery date before work starts</li>
-      <li><strong>One correction round</strong> for mapping issues, within 3 business days of your request</li>
-      <li><strong>White-label</strong> your title block, your firm named as creator</li>
-    </ul>
   </div>
 </section>
 
 <section class="section" id="samples">
   <div class="wrap">
     <h2>Samples</h2>
-    <p class="section-intro">Two complete figure sets with their CAD and GIS files. Both use synthetic field data on real sites: they make no wetland or jurisdictional finding, and the project drawn on the California site is fictitious. Each site's land status is disclosed on its sheets (conservation easements in California; in Minnesota, a state wildlife management area).</p>
+    <div class="samples-grid">
 
-    <article class="sample" id="minnesota">
-      <div class="sample-head">
+      <article class="sample" id="minnesota">
+        <figure class="lead">
+          <a href="img/mn-detail-labels-1600.jpg"><img src="img/mn-detail-labels-800.jpg" srcset="img/mn-detail-labels-800.jpg 800w, img/mn-detail-labels-1600.jpg 1600w" sizes="(min-width: 1120px) 516px, (min-width: 1000px) calc(50vw - 44px), calc(100vw - 40px)" width="1600" height="1150" loading="lazy" decoding="async" alt="Minnesota sample, sheet 8 at full scale: the CP1 control point with its NAD83(2011) coordinates, Wetland 1 (sedge meadow, PEM1B, 4.8411 acres) hatched over the aerial photo, and sample point SP-1."></a>
+          <figcaption class="mono dots"><span>Sheet 8 detail</span> <span>synthetic field data</span></figcaption>
+        </figure>
         <h3>Minnesota</h3>
-        <p class="sample-meta">BWSR / St. Paul District guidance · 8&nbsp;sheets · Rev.&nbsp;3.1</p>
-      </div>
-      <p>A 39.85-acre review area in Chisago County: site location with directions, topography, soils, the National Wetlands Inventory and the MN Public Waters Inventory, FEMA flood, aerials, and the final delineation with Circular 39 and Eggers &amp; Reed wetland types.</p>
-      <div class="gallery">
-        <figure class="lead-figure">
-          <a href="img/mn-sheet8-delineation-1600.jpg"><img src="img/mn-sheet8-delineation-800.jpg" srcset="img/mn-sheet8-delineation-800.jpg 800w, img/mn-sheet8-delineation-1600.jpg 1600w" sizes="(min-width: 1120px) 1080px, calc(100vw - 40px)" width="1600" height="1035" loading="lazy" decoding="async" alt="Minnesota sample, sheet 8: final wetland delineation on a 2023 aerial photo, with five synthetic wetlands outlined and hatched, sample and photo points, a legend and tables."></a>
-          <figcaption>Sheet 8: the final delineation on a 2023 NAIP aerial, with the wetland, sample-point and photo-point tables.</figcaption>
-        </figure>
-        <figure>
-          <a href="img/mn-sheet5-nwi-pwi-1600.jpg"><img src="img/mn-sheet5-nwi-pwi-800.jpg" srcset="img/mn-sheet5-nwi-pwi-800.jpg 800w, img/mn-sheet5-nwi-pwi-1600.jpg 1600w" sizes="(min-width: 1120px) 531px, (min-width: 700px) calc(50vw - 29px), calc(100vw - 40px)" width="1600" height="1035" loading="lazy" decoding="async" alt="Minnesota sample, sheet 5: National Wetlands Inventory polygons and Public Waters Inventory features around the review area on an aerial photo, with a legend and tables."></a>
-          <figcaption>Sheet 5: National Wetlands Inventory and MN Public Waters Inventory.</figcaption>
-        </figure>
-        <figure>
-          <a href="img/mn-sheet2-location-1600.jpg"><img src="img/mn-sheet2-location-800.jpg" srcset="img/mn-sheet2-location-800.jpg 800w, img/mn-sheet2-location-1600.jpg 1600w" sizes="(min-width: 1120px) 531px, (min-width: 700px) calc(50vw - 29px), calc(100vw - 40px)" width="1600" height="1035" loading="lazy" decoding="async" alt="Minnesota sample, sheet 2: site location map on a topographic base with section lines, the review area in red, a regional inset, directions and corner coordinates."></a>
-          <figcaption>Sheet 2: site location map with directions and the review-area corners.</figcaption>
-        </figure>
-      </div>
-      <p class="hint">Select an image for a larger view; the PDF has the full detail.</p>
-      <ul class="downloads">
-        <li><a href="downloads/Minnesota_Sample_Delineation_Map_Set.pdf">Map set, 8 sheets</a> <span>PDF, 9.3 MB</span></li>
-        <li><a href="https://drive.google.com/drive/folders/1Fq6V54Ej_Fr-0esGHXx9GTszPu2JCoMa" rel="noopener">CAD and GIS files</a> <span>DXF; 13 shapefile layers in state plane, a WGS 84 GeoPackage, the ORM aquatic-resources table (CSV) and metadata. On Google Drive.</span></li>
-      </ul>
-    </article>
+        <p class="mono meta dots"><span>BWSR / St.&nbsp;Paul District</span> <span><span data-auto="mn-sheets">8</span> sheets</span> <span data-auto="mn-rev">Rev. 3.2</span></p>
+        <p>39.85 acres, Chisago County: location, topography, soils, NWI/PWI, flood, aerials, delineation (Circular 39, Eggers &amp; Reed).</p>
+        <div class="sheets">
+          <ul class="thumbs">
+            <li><a href="downloads/Minnesota_Sample_Delineation_Map_Set.pdf#page=2"><img src="img/mn-sheet2-thumb-480.jpg" width="480" height="311" loading="lazy" decoding="async" alt="Whole sheet 2: site location map (opens the PDF)."></a></li>
+            <li><a href="downloads/Minnesota_Sample_Delineation_Map_Set.pdf#page=5"><img src="img/mn-sheet5-thumb-480.jpg" width="480" height="311" loading="lazy" decoding="async" alt="Whole sheet 5: National Wetlands Inventory and Public Waters Inventory (opens the PDF)."></a></li>
+            <li><a href="downloads/Minnesota_Sample_Delineation_Map_Set.pdf#page=8"><img src="img/mn-sheet8-thumb-480.jpg" width="480" height="311" loading="lazy" decoding="async" alt="Whole sheet 8: final delineation with its tables (opens the PDF)."></a></li>
+          </ul>
+          <div class="letter">
+            <a href="downloads/Minnesota_Sample_Letter_Figure.pdf"><img src="img/mn-letter-thumb-360.jpg" width="360" height="466" loading="lazy" decoding="async" alt="Sheet 8 re-laid as one letter-size report page, Figure 7, with a bottom title strip and a grey &quot;Your firm · logo&quot; box (opens the PDF)."></a>
+            <p class="mono dots"><a href="downloads/Minnesota_Sample_Letter_Figure.pdf">Same sheet, your report format</a> <span>synthetic field data</span></p>
+          </div>
+        </div>
+        <ul class="files">
+          <li><a href="downloads/Minnesota_Sample_Delineation_Map_Set.pdf">PDF</a> <span data-auto="mn-pdf-size">9.3 MB</span></li>
+          <li><a href="downloads/Minnesota_Sample_CAD_file.dxf">DXF</a> <span data-auto="mn-dxf-size">0.5 MB</span></li>
+          <li><a href="downloads/Minnesota_Sample_GIS_package.zip">GIS (ZIP)</a> <span data-auto="mn-zip-size">9.9 MB</span></li>
+        </ul>
+      </article>
 
-    <article class="sample" id="california">
-      <div class="sample-head">
+      <article class="sample" id="california">
+        <figure class="lead">
+          <a href="img/ca-impact-plan-1600.jpg"><img src="img/ca-impact-plan-800.jpg" srcset="img/ca-impact-plan-800.jpg 800w, img/ca-impact-plan-1600.jpg 1600w" sizes="(min-width: 1120px) 516px, (min-width: 1000px) calc(50vw - 44px), calc(100vw - 40px)" width="1600" height="1147" loading="lazy" decoding="async" alt="California sample, sheet 6: impact exhibit in plan view, a fictitious access road and culvert crossing an intermittent stream and seasonal wetlands, with permanent and temporary impacts hatched and the Detail A frame."></a>
+          <figcaption class="mono dots"><span>Sheet 6 impact plan</span> <span>fictitious project</span> <span>synthetic field data</span></figcaption>
+        </figure>
         <h3>California</h3>
-        <p class="sample-meta">USACE South Pacific Division Map and Drawing Standards (2016) · 16&nbsp;sheets · v5.2</p>
-      </div>
-      <p>A 39.83-acre survey area in Sacramento County: the vicinity map on a USGS topographic base with the 7.5-minute quadrangle named, the delineation on a dated aerial and on topography, a photo-point map and log, impact exhibits (plan and cross-sections), the 401 and 1602 state permit sheets drawn from the same geometry, and context figures (NWI, FEMA flood, NRCS soils, 3DEP elevation, color-infrared and past aerials). A standards checklist, listing each exception, comes on request.</p>
-      <div class="gallery">
-        <figure class="lead-figure">
-          <a href="img/ca-sheet3-delineation-1600.jpg"><img src="img/ca-sheet3-delineation-800.jpg" srcset="img/ca-sheet3-delineation-800.jpg 800w, img/ca-sheet3-delineation-1600.jpg 1600w" sizes="(min-width: 1120px) 1080px, calc(100vw - 40px)" width="1600" height="1035" loading="lazy" decoding="async" alt="California sample, sheet 3: aquatic resources delineation on a 2022 aerial photo, with an intermittent stream, seasonal wetlands and vernal pools outlined, data points, a legend and the resource table."></a>
-          <figcaption>Sheet 3: aquatic resources on 2022 NAIP imagery, with the resource table and the delineation summary.</figcaption>
-        </figure>
-        <figure>
-          <a href="img/ca-sheet6-impact-plan-1600.jpg"><img src="img/ca-sheet6-impact-plan-800.jpg" srcset="img/ca-sheet6-impact-plan-800.jpg 800w, img/ca-sheet6-impact-plan-1600.jpg 1600w" sizes="(min-width: 1120px) 531px, (min-width: 700px) calc(50vw - 29px), calc(100vw - 40px)" width="1600" height="1035" loading="lazy" decoding="async" alt="California sample, sheet 6: impact exhibit in plan view, with a fictitious access road, culverts and building pad over delineated features, permanent and temporary impacts, an impact table and a culvert detail."></a>
-          <figcaption>Sheet 6: impact exhibit, plan view (fictitious access road, culverts and building pad), with the impact table and a culvert detail.</figcaption>
-        </figure>
-        <figure>
-          <a href="img/ca-sheet8-state-permits-1600.jpg"><img src="img/ca-sheet8-state-permits-800.jpg" srcset="img/ca-sheet8-state-permits-800.jpg 800w, img/ca-sheet8-state-permits-1600.jpg 1600w" sizes="(min-width: 1120px) 531px, (min-width: 700px) calc(50vw - 29px), calc(100vw - 40px)" width="1600" height="1035" loading="lazy" decoding="async" alt="California sample, sheet 8: state permit map in two panels, potential waters of the state and the CDFW streambed extent, with an index map and area tables."></a>
-          <figcaption>Sheet 8: state permit map, potential waters of the state (Water Boards 401) and the CDFW 1602 extent.</figcaption>
-        </figure>
-      </div>
-      <p class="hint">Select an image for a larger view; the PDF has the full detail.</p>
-      <ul class="downloads">
-        <li><a href="downloads/California_Sample_Delineation_Map_Set.pdf">Map set, 16 sheets</a> <span>PDF, 9.9 MB</span></li>
-        <li><a href="https://drive.google.com/drive/folders/1Fq6V54Ej_Fr-0esGHXx9GTszPu2JCoMa" rel="noopener">CAD and GIS files</a> <span>DXF; 19 layers as shapefiles in state plane and in WGS 84, a GeoPackage, an Esri file geodatabase, the ORM tables (CSV and Excel) and metadata. On Google Drive.</span></li>
-      </ul>
-    </article>
+        <p class="mono meta dots"><span>USACE SPD 2016</span> <span><span data-auto="ca-sheets">16</span> sheets</span> <span data-auto="ca-ver">v5.3 (Rev. 3)</span></p>
+        <p>39.83 acres, Sacramento County: vicinity, delineation, photo points, impacts, 401/1602 sheets from one geometry. Checklist listing each exception, on request.</p>
+        <div class="sheets">
+          <ul class="thumbs">
+            <li><a href="downloads/California_Sample_Delineation_Map_Set.pdf#page=3"><img src="img/ca-sheet3-thumb-480.jpg" width="480" height="311" loading="lazy" decoding="async" alt="Whole sheet 3: delineation on the 2022 aerial with the resource table (opens the PDF)."></a></li>
+            <li><a href="downloads/California_Sample_Delineation_Map_Set.pdf#page=6"><img src="img/ca-sheet6-thumb-480.jpg" width="480" height="311" loading="lazy" decoding="async" alt="Whole sheet 6: impact exhibit with the impact table and Detail A (opens the PDF)."></a></li>
+            <li><a href="downloads/California_Sample_Delineation_Map_Set.pdf#page=8"><img src="img/ca-sheet8-thumb-480.jpg" width="480" height="311" loading="lazy" decoding="async" alt="Whole sheet 8: state permit map, waters of the state and the CDFW extent (opens the PDF)."></a></li>
+          </ul>
+        </div>
+        <ul class="files">
+          <li><a href="downloads/California_Sample_Delineation_Map_Set.pdf">PDF</a> <span data-auto="ca-pdf-size">10.0 MB</span></li>
+          <li><a href="downloads/California_Sample_CAD_file.dxf">DXF</a> <span data-auto="ca-dxf-size">4.3 MB</span></li>
+          <li><a href="downloads/California_Sample_GIS_package.zip">GIS (ZIP)</a> <span data-auto="ca-zip-size">16.7 MB</span></li>
+        </ul>
+      </article>
 
-    <p class="on-request">On request: the standards checklists (they list every sample note) and the California QA summary.</p>
-  </div>
-</section>
-
-<section class="section alt" id="studio">
-  <div class="wrap">
-    <h2>Other GIS &amp; CAD work</h2>
-    <p class="section-intro">Analysis boards from my architecture studios at Politecnico di Milano, made in QGIS and Python from public data. The studios are group projects; each caption says what my part was.</p>
-    <div class="studio-grid">
-      <figure>
-        <a href="img/brussels-land-use-1600.jpg"><img src="img/brussels-land-use-800.jpg" srcset="img/brussels-land-use-800.jpg 800w, img/brussels-land-use-1600.jpg 1600w" sizes="(min-width: 1120px) 340px, (min-width: 900px) calc(33vw - 33px), calc(100vw - 40px)" width="1600" height="1120" loading="lazy" decoding="async" alt="Land use analysis board for a site in Brussels: a 1:2000 map with buildings colored by use, a legend with areas, a donut chart, key observations and six small thematic maps."></a>
-        <figcaption>
-          <strong>Land use around a studio site, Brussels.</strong> 100&nbsp;×&nbsp;70&nbsp;cm board, main map at 1:2000: each building colored by its recorded use, or by its zoning where no use is recorded (drawn lighter), with areas, key observations and six small thematic maps.
-          <span class="credit">Architectural Design Studio 3, 2026, group project. My part: the site GIS and this board. Data: UrbIS and points of interest (Paradigm.brussels); heritage inventory and PRAS land-use plan (urban.brussels); STIB network (Brussels Mobility); noise map Lden 2021 (Brussels Environment); © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors (ODbL).</span>
-        </figcaption>
-      </figure>
-      <figure>
-        <a href="img/brussels-15-minute-walk-1600.jpg"><img src="img/brussels-15-minute-walk-800.jpg" srcset="img/brussels-15-minute-walk-800.jpg 800w, img/brussels-15-minute-walk-1600.jpg 1600w" sizes="(min-width: 1120px) 340px, (min-width: 900px) calc(33vw - 33px), calc(100vw - 40px)" width="1600" height="1120" loading="lazy" decoding="async" alt="Isochrone board for a site in Brussels: walking-time bands of 5, 10 and 15 minutes over the street network, a direction chart, counts of nearby services and a chart of walking minutes to daily needs."></a>
-        <figcaption>
-          <strong>15-minute walk from the site, Brussels.</strong> 100&nbsp;×&nbsp;70&nbsp;cm board, main map at 1:5000: walking time from the site's four entrances over the OpenStreetMap street and path network at 4.5&nbsp;km/h, and what lies within 15 minutes. Route lengths checked against OSRM and Google Maps.
-          <span class="credit">Architectural Design Studio 3, 2026, group project. My part: the walking-network analysis and this board. Data: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors (ODbL); UrbIS and points of interest (Paradigm.brussels); PRAS land-use plan (urban.brussels).</span>
-        </figcaption>
-      </figure>
-      <figure>
-        <a href="img/casorate-transport-1600.jpg"><img src="img/casorate-transport-800.jpg" srcset="img/casorate-transport-800.jpg 800w, img/casorate-transport-1600.jpg 1600w" sizes="(min-width: 1120px) 340px, (min-width: 900px) calc(33vw - 33px), calc(100vw - 40px)" width="1600" height="1132" loading="lazy" decoding="async" alt="Transport board for Casorate Primo, Italy: a regional map of four bus lines to Milan and Pavia, line diagrams, departures by hour and a town map of bus stops."></a>
-        <figcaption>
-          <strong>Transport and connectivity, Casorate Primo, Italy.</strong> A3 board: how a heritage villa is reached without a car, with four bus lines to Milan and Pavia from the operators' timetables, departures by hour and a town map of every stop.
-          <span class="credit">Historical Building Preservation Studio, 2026–27, group project. My part: the transport, connectivity and population analysis. Data: STAR Mobility and Autoguidovie timetables; STAR Mobility GTFS via Agenzia TPL (<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>); © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors (ODbL); PGT 2019.</span>
-        </figcaption>
-      </figure>
     </div>
+    <p class="note">Synthetic field data on real sites (California: conservation easements; Minnesota: state wildlife management area); no wetland or jurisdictional finding. <a href="https://drive.google.com/drive/folders/1Fq6V54Ej_Fr-0esGHXx9GTszPu2JCoMa" rel="noopener">Also on Google Drive</a>.</p>
   </div>
 </section>
 
-<section class="section" id="how">
+<section class="section paper" id="how">
   <div class="wrap">
     <h2>How it works</h2>
     <ol class="steps">
       <li>
-        <h3>Free test</h3>
-        <p>Send me one figure from a report you've already filed (or one that is public), and I'll redraw it in your format so you can compare. No charge, no obligation; I use the figure only for this test. I confirm the date when the figure arrives.</p>
+        <p class="mono step-label">Free test</p>
+        <p>Send one figure from a report you've already filed (a public one); I'll redraw it in your format.</p>
       </li>
       <li>
-        <h3>You send the field data</h3>
-        <p>Your GNSS exports (SHP, GDB, CSV or KML) of flags, data points and photo points, with IDs matching your data forms, and the survey-area boundary. For impact exhibits and permit sheets, also the project design (CAD or PDF), the photos with their log and your CDFW extent. Public NAIP imagery unless you license other imagery. Please remove landowner names first.</p>
+        <p class="mono step-label">Field data</p>
+        <p>GNSS exports with IDs matching your data forms, and the survey boundary; please remove landowner names.</p>
       </li>
       <li>
-        <h3>You get the figures and files</h3>
-        <p>Vector PDF figures in your format and title block: site location or vicinity, topography, soils, NWI (and PWI in Minnesota), FEMA flood, aerials and the delineation, plus impact exhibits and 401/1602 permit sheets as in the California sample. With them: shapefiles and a GeoPackage, a DXF in state plane coordinates and the ORM tables (CSV).</p>
+        <p class="mono step-label">Deliverables</p>
+        <p>Vector PDFs in your title block, plus GIS and CAD files.</p>
       </li>
     </ol>
-
-    <div class="terms">
-      <div class="term">
-        <h3>Price</h3>
-        <p>From $150 per figure set (the figures and files for one delineation report). Each job gets a fixed quote and delivery date before work starts, based on acreage, features, sheets and deliverables.</p>
-        <p>First job: you pay only if you use the maps (in a submittal, a client deliverable or as the base for your own figures).</p>
+    <dl class="terms">
+      <div>
+        <dt class="mono">Price</dt>
+        <dd>From $150 per figure set; fixed quote and delivery date up front. First job: pay only if you use the maps; if not, tell me within 30 days of delivery.</dd>
       </div>
-      <div class="term">
-        <h3>Corrections</h3>
-        <p>One correction round is included for mapping issues: the format, labels or numbers on the maps, not the field boundaries. I make the corrections within 3 business days of your request, for requests made within 12 months of delivery.</p>
+      <div>
+        <dt class="mono">Corrections</dt>
+        <dd>One correction round for mapping issues, within 3 business days of your request or by a date we agree if you ask in one of my deadline weeks.</dd>
       </div>
-      <div class="term">
-        <h3>Who does what</h3>
-        <p>Your scientist makes every wetland determination, reviews every figure before submittal and signs the report. I don't do fieldwork, land surveying or wetland determinations; sites in agricultural production are out of scope for now. My liability for a job is limited to the fee you paid for it.</p>
+      <div>
+        <dt class="mono">Scope</dt>
+        <dd>I don't do fieldwork, land surveying or wetland determinations; your scientist signs. Non-farm sites for now. Liability limited to the fee you paid.</dd>
       </div>
-      <div class="term">
-        <h3>Confidentiality</h3>
-        <p>Your data, project and client details are confidential and used only for your job. I'll sign your NDA if it allows the data handling described here.</p>
+      <div>
+        <dt class="mono">Your data</dt>
+        <dd>Confidential, used only for your job, deleted on request. I produce the figures with a scripted QGIS/Python pipeline that I run with an AI assistant (Anthropic's Claude, model training turned off), and I check every sheet myself before delivery. Tell me first if your contract forbids AI tools or offshore handling. CNDDB data: only under your license, never in an AI tool, deleted when the work ends.</dd>
       </div>
-      <div class="term wide">
-        <h3>Data handling</h3>
-        <p>Your files stay on my computer and in the channel you send them through; I send deliverables through a private folder shared only with you. Some processing is AI-assisted (Anthropic's Claude, with model training turned off), so parts of your files may pass through Anthropic's service; I share them with no one else. If your contract forbids AI tools or offshore handling of the data, tell me before you send anything. Please remove landowner names and other personal details. Your data is deleted on request, otherwise at the end of the correction period.</p>
-      </div>
-      <div class="term wide">
-        <h3>White-label</h3>
-        <p>On payment, you own the deliverables and all rights in them. They are white-label: your title block, your firm named as creator, my name only if you want it.</p>
-      </div>
-    </div>
-    <p class="doc-links"><a href="downloads/Terms_of_Engagement_v1.pdf">Terms of engagement</a> (PDF, 1 page) · <a href="downloads/About_and_Deliverables_Danir_Kantserov.pdf">About and deliverables</a> (PDF, 3 pages)</p>
+    </dl>
+    <p class="doc-links dots"><span><a href="downloads/Terms_of_Engagement_v1.pdf">Full terms</a> (<span data-auto="terms-pages">1 page</span>)</span> <span><a href="downloads/About_and_Deliverables_Danir_Kantserov.pdf">About sheet</a> (<span data-auto="about-pages">3 pages</span>)</span></p>
   </div>
 </section>
 
-<section class="section alt" id="about">
-  <div class="wrap about">
-    <div class="monogram" aria-hidden="true">DK</div>
-    <div class="about-text">
-      <h2>About</h2>
-      <p>I'm Danir Kantserov. I'm an architecture student at Politecnico di Milano and do GIS/CAD drafting in QGIS. My studio work covers site GIS and 3D site models.</p>
-      <p>The service is new: the samples are my portfolio (real sites, synthetic field data), and I have no paid delineation jobs yet, which is why the first test is free.</p>
-      <p>I work from Milan, Italy, 8–9 hours ahead of California and 6–7 ahead of Minnesota, and I reply in English. Happy to do a 15-minute video call, <span class="nowrap">8–11&nbsp;am Pacific</span> or <span class="nowrap">10&nbsp;am–1&nbsp;pm Central</span>.</p>
-      <ul class="contact-list">
-        <li><a href="mailto:danirkantserov@gmail.com">danirkantserov@gmail.com</a></li>
-        <li><a href="https://www.linkedin.com/in/danir-kantserov-35a352314/" rel="noopener">LinkedIn profile</a></li>
-      </ul>
+<section class="section" id="studio">
+  <div class="wrap">
+    <h2>Architecture studio GIS</h2>
+    <div class="studio-grid">
+      <figure class="wide">
+        <a href="img/brussels-land-use-1600.jpg"><img src="img/brussels-land-use-800.jpg" srcset="img/brussels-land-use-800.jpg 800w, img/brussels-land-use-1600.jpg 1600w" sizes="(min-width: 1120px) 1080px, calc(100vw - 40px)" width="1600" height="1120" loading="lazy" decoding="async" alt="Land use analysis board for a site in Brussels: a 1:2000 map with buildings colored by use, a legend with areas, a donut chart, key observations and six small thematic maps."></a>
+        <figcaption><strong>Land use, Brussels.</strong> Group studio project; my part: the site GIS and this board.
+          <span class="credit">Data: UrbIS and points of interest (Paradigm.brussels); heritage inventory and PRAS land-use plan (urban.brussels); STIB network (Brussels Mobility); noise map Lden 2021 (Brussels Environment); © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors (ODbL).</span></figcaption>
+      </figure>
+      <figure class="side">
+        <a href="img/casorate-transport-1600.jpg"><img src="img/casorate-transport-800.jpg" srcset="img/casorate-transport-800.jpg 800w, img/casorate-transport-1600.jpg 1600w" sizes="(min-width: 1120px) 620px, (min-width: 760px) calc(58vw - 30px), calc(100vw - 40px)" width="1600" height="1132" loading="lazy" decoding="async" alt="Transport board for Casorate Primo, Italy: a regional map of four bus lines to Milan and Pavia, line diagrams, departures by hour and a town map of bus stops."></a>
+        <figcaption><strong>Transport, Casorate Primo, Italy.</strong> Group studio project; my part: the transport, connectivity and population analysis.
+          <span class="credit">Data: STAR Mobility and Autoguidovie timetables; STAR Mobility GTFS via Agenzia TPL (<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>); © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors (ODbL); PGT 2019.</span></figcaption>
+      </figure>
     </div>
+  </div>
+</section>
+
+<section class="section paper" id="about">
+  <div class="wrap">
+    <h2>About</h2>
+    <p>I'm an architecture student at Politecnico di Milano and do GIS/CAD drafting in QGIS.</p>
+    <p>The service is new: I have no paid delineation jobs yet, which is why the first test is free.</p>
+    <p class="contact">By email or a 15-minute call (<span class="nowrap">8–11&nbsp;am Pacific</span>, <span class="nowrap">10&nbsp;am–1&nbsp;pm Central</span>): <span class="dots"><a href="mailto:danirkantserov@gmail.com">danirkantserov@gmail.com</a> <a href="https://www.linkedin.com/in/danir-kantserov-35a352314/" rel="noopener">LinkedIn</a></span></p>
+  </div>
+</section>
+
+<section class="section privacy" id="privacy">
+  <div class="wrap">
+    <h2>Privacy</h2>
+    <p><strong>Privacy (prospects).</strong> Danir Kantserov, Milan, is the controller. I use your firm's name and business email, taken from your public website, to offer this service: one introduction and one follow-up, on legitimate interest. Gmail (Google) and Claude (Anthropic), both in the US, process the messages. I keep the data until 31 Jan 2027 unless we start working together; a "no" goes on a do-not-contact list that I keep. You can object, ask for access or erasure, or complain to the Italian Garante: reply to my email.</p>
+    <p><strong>This site:</strong> no cookies; GitHub Pages logs IP addresses.</p>
   </div>
 </section>
 
@@ -222,9 +191,7 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <p><a href="mailto:danirkantserov@gmail.com">danirkantserov@gmail.com</a> · Milan, Italy</p>
-    <p>White-label: your logo, your title block.</p>
-    <p class="fine">The studio projects are coursework at Politecnico di Milano; the drafting service is independent of the university. No cookies or tracking scripts. © 2026 Danir Kantserov</p>
+    <p class="dots"><span>© 2026 Danir Kantserov</span> <span>Milan, Italy</span> <span>independent of Politecnico di Milano</span> <a href="#privacy">Privacy</a></p>
   </div>
 </footer>
 </body>
