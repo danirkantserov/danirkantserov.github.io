@@ -741,6 +741,27 @@ h3 {
     grid-template-rows: subgrid;
     align-content: start;
   }
+
+  /* A third block (Texas, 2026-10-16) takes the whole next row: its drawing in the left column at the leads' width,
+     its title, text, sheets and files in the right column, so no half-empty row is left */
+  .sample:nth-child(3) {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(4, auto) 1fr;
+    column-gap: 48px;
+    margin-top: 56px;
+  }
+
+  .sample:nth-child(3) > .lead {
+    grid-column: 1;
+    grid-row: 1 / -1;
+    margin-bottom: 0;
+  }
+
+  .sample:nth-child(3) > :not(.lead) {
+    grid-column: 2;
+  }
 }
 
 /* Studio boards side by side (v2.2, UX review M4) */
